@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>maytinh</title>
+</head>
+<body>
+<input type="number" id="sothu1">
+<input type="number" id="sothu2">
+<button onclick="congvao()">+</button>
+<button onclick="trudi()">-</button>
+<button onclick="nhandi()">x</button>
+<button onclick="chiadi()">:</button>
+<h1>Result</h1>
+<h2 id="ketquala">Day la ket qua</h2>
+<script>
+    function congvao() {
+        let sothu1 = +document.getElementById('sothu1').value;
+        let sothu2 = +document.getElementById('sothu2').value;
+        let ketqua = sothu1 + sothu2;
+        document.getElementById('ketquala').innerHTML = ketqua;
+    }
+
+    function trudi() {
+        let sothu1 = +document.getElementById('sothu1').value;
+        let sothu2 = +document.getElementById('sothu2').value;
+        let ketqua = sothu1 - sothu2;
+        document.getElementById('ketquala').innerHTML = ketqua;
+
+    }
+    function nhandi() {
+        let sothu1 = +document.getElementById('sothu1').value;
+        let sothu2 = +document.getElementById('sothu2').value;
+        let ketqua = sothu1 * sothu2;
+        document.getElementById('ketquala').innerHTML = ketqua;
+
+    }
+    function chiadi() {
+        let sothu1 = +document.getElementById('sothu1').value;
+        let sothu2 = +document.getElementById('sothu2').value;
+        let ketqua = sothu1 / sothu2;
+        document.getElementById('ketquala').innerHTML = ketqua;
+
+    }
+</script>
+
+
+</body>
+</html>

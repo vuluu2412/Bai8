@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>doitiente</title>
+</head>
+<body>
+<input type="text" id="nhapso">
+<select name ="" id="select1">
+    <option value="a">VND</option>
+    <option value="b">USD</option>
+</select>
+<select name ="" id="select2">
+    <option value="a">VND</option>
+    <option value="b">USD</option>
+</select>
+<button onclick="chuyendoide()">Convert</button>
+<script>
+    function chuyendoide (){
+        let giatrivao= document.getElementById('nhapso').value;
+        let sl1= document.getElementById('select1').value;
+        let sl2= document.getElementById('select2').value;
+        if (sl1==sl2){
+            alert(giatrivao);
+        }
+        if (sl1=="a" && sl2=="b"){
+            alert(giatrivao/23000)
+        }
+        if (sl1=="b" && sl2=="a"){
+            alert(giatrivao*23000)
+        }
+
+    }
+</script>
+</body>
+</html>
