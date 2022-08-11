@@ -6,21 +6,22 @@
 </head>
 <body>
 <script>
-    let snt = prompt('nhập số nt');
-    let count = 0;
-    for (n = 2; n < snt; n++) {
-        if (snt % n == 0) {
-            count++;
-            break;
+    let dem = 0;
+    let so = 2;
+    while (dem < 20) {
+        let snt = true;
+        for ( let n = 2; n < so; n++) {
+            if (so%n==0) {
+                snt = false;
+                break;
+            }
         }
+        if (snt) {
+            document.write(so + ' ')
+            dem++;
+        }
+        so++;
     }
-    if (count == 0) {
-        alert(snt + 'là số nguyen to')
-    } else {
-        alert(snt + 'khong la so nguyen to')
-    }
-
 </script>
-
 </body>
 </html>
