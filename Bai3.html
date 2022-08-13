@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai3</title>
+</head>
+<body>
+<input type="text" id ="ip1"  placeholder="Nhap ten">
+<input type="text" id ="ip2"  placeholder="Nhap link fb">
+<button id="btn" onclick="facebook()">Click me</button>
+<h2 id="name"></h2>
+<a href="" id="face"></a>
+</body>
+<script>
+  function facebook (){
+    let name = document.getElementById("ip1").value
+    let facebook = document.getElementById("ip2").value
+    document.getElementById("name").innerHTML = name
+    document.getElementById("face").href = facebook
+    document.getElementById("face").innerHTML = 'Facebook'
+  }
+</script>
+</html>
+

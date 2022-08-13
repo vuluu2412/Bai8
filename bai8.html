@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>picture</title>
+</head>
+<body>
+<img id="anh" src="">
+<h2 id="out"></h2>
+</body>
+<script>
+  let a = prompt('Nhap link anh');
+  let b = prompt('so luong anh can in');
+  for (i=1;i<=b;i++){
+    document.getElementById("out").innerHTML += '<img src="' + a + '">'
+  }
+</script>
+</html>

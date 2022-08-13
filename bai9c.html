@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai9b</title>
+</head>
+<body>
+<input id="soa" type="number" placeholder="Nhập số a">
+<input id="sob" type="number" placeholder="Nhập số b">
+<button id="inso" onclick="inso()">Tong</button>
+<script>
+    function inso() {
+        let a = +document.getElementById("soa").value;
+        let b = +document.getElementById("sob").value;
+        let Tong = 0;
+        for (i = a; i <= b; i++) {
+            Tong = Tong + i;
+        }
+        document.write(Tong);
+    }
+</script>
+</body>
+</html>
